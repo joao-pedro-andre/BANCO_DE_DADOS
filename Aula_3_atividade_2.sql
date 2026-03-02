@@ -67,7 +67,7 @@ CREATE TABLE venda (
   client_id int,
   Carro_id int,
   data_compra date NOT NULL,
-  preco_venda decimal(12.2) NOT NULL,
+  preco_venda decimal(12,2) NOT NULL,
   clien_id int,
   FOREIGN KEY (clien_id) REFERENCES cliente (id)
 );
